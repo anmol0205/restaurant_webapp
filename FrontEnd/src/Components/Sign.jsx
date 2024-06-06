@@ -11,7 +11,7 @@ const SignUp = () => {
   const handleSubmit= async (e)=>{
     e.preventDefault();
     try{
-      const response = await axios.post(`${window.location.origin}/sign`, formdata);
+      const response = await axios.post('https://restaurant-webapp-psi.vercel.app/sign', formdata);
       console.log(response);
       setMsg(response.data.message);
 
