@@ -1,0 +1,74 @@
+.review-container {
+    
+    background-color: #efebe5;
+  }
+.review-box{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    
+
+}
+
+.review-heading {
+    margin-top: 60px;
+    padding-top: 12px;
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    
+  }
+  
+  .review-heading::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #ff6347;
+    margin: 10px auto 0;
+  }
+  
+  .review-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+    transition: transform 0.3s;
+  }
+  
+  .review-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .review-msg {
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .review-name {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    color: #7d5e42;
+  }
+  
+  @media (max-width: 768px) {
+    .review-card {
+      width: calc(50% - 40px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .review-card {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,32 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  background: transparent;
+  padding: 1rem 0;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Make the list take the full width */
+}
+
+.navbar-item {
+  margin: 0 1rem;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: rgba(103, 104, 86, 0.92);
+  font-size: 1.2rem;
+}
+
+.navbar-item a:hover {
+  color: gray;
+}
+
+.navbar-item-right {
+  margin-left: auto; 
+}
