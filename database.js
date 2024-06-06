@@ -6,7 +6,7 @@ console.log('MongoDB URI:', uri); // Add this line to debug
 
 const connectToMongoDB = async () => {
     try {
-        await mongoose.connect(uri, {
+        await mongoose.connect("mongodb+srv://anmolgaur005:anmol2005@mycluster01.ebv16sh.mongodb.net/", {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             serverSelectionTimeoutMS: 50000 // Increase timeout to 50 seconds
